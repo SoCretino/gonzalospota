@@ -1,0 +1,128 @@
+html {
+  font-size: 16px; }
+
+body {
+  background: #FAFAFA;
+  color: #424242;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400; }
+
+a {
+  color: #424242;
+  transition: .2s all ease-in; }
+  a:hover {
+    color: #2E7D32; }
+
+#nav-bar {
+  opacity: 0;
+  font-weight: 200;
+  font-size: 1.5rem; }
+
+.nav-menu-items li {
+  display: inline;
+  margin-left: 20px; }
+
+#main {
+  margin: 5em 0; }
+
+.profile-image {
+  opacity: 0; }
+
+.main-desc {
+  opacity: 0;
+  font-weight: 100;
+  font-size: 2rem; }
+
+.hey {
+  opacity: 0;
+  font-weight: 400;
+  color: #2E7D32;
+  font-size: 3rem; }
+
+.dev a, .mail a, .work-github a {
+  color: #2E7D32; }
+  .dev a:hover, .mail a:hover, .work-github a:hover {
+    color: #424242; }
+
+#work {
+  opacity: 0;
+  background: #F5F5F5;
+  padding: 5em 0; }
+  #work h2 {
+    margin-bottom: 80px;
+    margin-left: 12px;
+    font-size: 2.5rem; }
+  #work h3 {
+    font-size: 2rem; }
+  #work h4 {
+    margin-bottom: 10px; }
+  #work p {
+    font-size: 1.5rem;
+    font-weight: 200; }
+
+.work-site {
+  margin-bottom: 80px;
+  background: #fff;
+  transition: .5s all;
+  border: 1px solid #EEEEEE; }
+  .work-site:hover {
+    box-shadow: 0 0 1em #BDBDBD; }
+
+.work-github {
+  padding-top: 24px;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  text-align: right; }
+
+.work-image {
+  display: none; }
+
+#contact {
+  opacity: 0;
+  font-size: 2.5rem;
+  padding: 80px 0; }
+
+.social-links {
+  font-size: 1.5rem;
+  font-weight: 200; }
+  .social-links li {
+    display: inline;
+    margin-right: 20px; }
+    .social-links li i {
+      color: #2E7D32; }
+
+.linebreak {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .social-links li {
+    display: block; }
+  .work-site {
+    margin: 12px 12px 40px 12px; }
+    .work-site:hover {
+      box-shadow: none; }
+  #work {
+    padding: 2.5em 0; }
+    #work h2 {
+      margin-bottom: 40px;
+      text-align: center; }
+    #work p {
+      font-size: 1.2rem; }
+  #contact {
+    padding: 40px 0; }
+    #contact p {
+      text-align: center; }
+  .linebreak {
+    display: block; }
+  .profile-image {
+    display: none; } }
+
+@media screen and (min-width: 1024px) {
+  .work-image {
+    display: block; }
+  .work-image-mobile {
+    display: none; } }
+
+@media screen and (min-width: 1216px) {
+  .main-desc {
+    font-size: 2.5rem; } }

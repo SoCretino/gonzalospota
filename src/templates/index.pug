@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+	head
+		title Gonzalo Spota | Front-End Web Developer
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='description' content="I'm Gonzalo Spota, a freelance front-end web developer living in Buenos Aires, Argentina.")
+		link(rel='canonical' itemprop='url' href='http://gonzalospota.com/')
+		link(rel='stylesheet', href='css/bulma.css')
+		link(rel='stylesheet', href='css/font-awesome.min.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Overpass:100,200,400')
+		link(rel='stylesheet', href='css/style.css')
+		script(type="application/ld+json").
+			{
+				"@context" : "http://schema.org",
+				"@type" : "Person",
+				"name" : "Gonzalo Spota",
+				"image" : "http://gonzalospota.com/img/profile.jpg",
+				"jobTitle" : "Front-End Web Developer",
+				"email" : "gonzalospota@gmail.com",
+				"url" : "http://gonzalospota.com",
+				"sameAs" : 	
+					[
+						"https://www.facebook.com/Gon.Spota",
+						"https://www.instagram.com/socretino/",
+						"https://www.linkedin.com/in/gonzalospota/",
+						"https://github.com/SoCretino"
+					] 
+			}
+	body
+		nav#nav-bar.columns.is-marginless.is-mobile
+			.nav-lang.column.is-2
+				span.language #[a(href='#' title='Soon!') Spanish]
+			.nav-menu.column.has-text-right
+				ul.nav-menu-items
+					li 
+						a(href='#work').work-btn Work
+					li
+						a(href='#contact').contact-btn Contact
+		main(role='main')#main.columns.is-vcentered
+			.column.is-6.is-offset-2
+				span.hey Hey!
+				h1.main-desc I'm Gonzalo Spota, a freelance front-end web #[span.dev #[a(href='https://github.com/SoCretino' target='_blank') developer]] living in Buenos Aires, Argentina.
+			.profile-image.column.is-2
+				figure
+					img(src='img/profile.jpg')
+		section#work
+			h2 Some of my work
+			.work-site.column.is-8.is-offset-2
+				.work-image
+					a(href='http://www.domokck.com/' target='_blank') #[img(src='img/domokck.png')]
+				.work-image-mobile
+					a(href='http://www.domokck.com/' target='_blank') #[img(src='img/domokck_mobile.png')]
+				.work-title
+					h3 #[a(href='http://www.domokck.com/' target='_blank') Domo KcK]
+				.work-subtitle
+					h4 Home automation
+				.work-desc
+					p A simple site to demostrate the simplicities and perks of a smart home.<br><br>
+					p On this example, I used Foundation's Flex-Grid to easily generate a fine-looking website on both mobile and desktop versions, as well as a few jQuery plugins to handle validations, animations and a cool slider.<br> It also features a form made with PHP.
+					p.work-github #[a(href='https://github.com/SoCretino/DomoKcK' target='_blank') Check it on GitHub]
+			.work-site.column.is-8.is-offset-2
+				.work-image
+					a(href='http://bispo.info/' target='_blank') #[img(src='img/bispo.png')]
+				.work-image-mobile
+					a(href='http://bispo.info/' target='_blank') #[img(src='img/bispo_mobile.png')]
+				.work-title
+					h3 #[a(href='http://bispo.info/' target='_blank') BISPO]
+				.work-subtitle
+					h4 Backline rental service
+				.work-desc
+					p Developed a complete site for backline items listing, such as mixing consoles, guitars, drums, etc.<br><br>
+					p Made with PHP as the backend to dynamically load items from a MySQL DataBase. <br>This site also features a custom CMS for quickly adding, updating or removing an item.
+					p.work-github #[a(href='https://github.com/SoCretino/BISPO' target='_blank') Check it on GitHub]
+			.work-site.column.is-8.is-offset-2
+				.work-image
+					a(href='https://github.com/SoCretino/almundo-api' target='_blank') #[img(src='img/almundo.png')]
+				.work-image-mobile
+					a(href='https://github.com/SoCretino/almundo-api' target='_blank') #[img(src='img/almundo_mobile.png')]
+				.work-title
+					h3 #[a(href='https://github.com/SoCretino/almundo-api' target='_blank') almundo.com API]
+				.work-subtitle
+					h4 Hotel search component
+				.work-desc
+					p While browsing looking for a challenge to test my Angular and NodeJS knowledge, I found this exam for a job entry at almundo.com.<br><br>It is a simple, yet demanding to make, SPA for displaying a list of hotels that is stored on a Mongo DataBase (NoSQL), that lets the user filter based on stars or search for a specific hotel name.
+					p.work-github #[a(href='https://github.com/SoCretino/almundo-api' target='_blank') Check it on GitHub]
+			.work-site.column.is-8.is-offset-2
+				.work-image
+					img(src='img/gs.png')
+				.work-image-mobile
+					img(src='img/gs_mobile.png')
+				.work-title
+					h3 This site!
+				.work-subtitle
+					h4 Portfolio website
+				.work-desc
+					p It may seem like it isn't much, but I keep on learning a lot on every single thing I've done, even if it is as simple as this.<br><br>
+					p I figured that I needed to organize my code, and minimize my time coding while at it, so I started using a lot of the tools available today to meet current web-dev standards, such as a package manager (NPM), a module bundler (Webpack), a task runner (Gulp), a HTML template engine (Jade / Pug) and a CSS pre-processor (SASS).<br>
+					p.work-github #[a(href='https://github.com/SoCretino/gonzalospota' target='_blank') Check it on GitHub]
+		footer#contact
+			.column
+				p Looking to start a project? #[span.mail #[a(href='mailto:gonzalospota@gmail.com?subject=Freelance+project') <br class="linebreak"> Hit me up!]]
+			.column
+				ul.social-links
+					li <i class="fa fa-github fa-fw" aria-hidden="true"></i> #[a(href='https://github.com/SoCretino' target='_blank') GitHub]
+					li <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> #[a(href='https://www.linkedin.com/in/gonzalospota/' target='_blank') LinkedIn]
+					li <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> #[a(href='mailto:gonzalospota@gmail.com?subject=Freelance+project') Email]
+					li <i class="fa fa-instagram fa-fw" aria-hidden="true"></i> #[a(href='https://www.instagram.com/socretino/' target='_blank') Instagram]
+		script(src='js/bundle.js')
