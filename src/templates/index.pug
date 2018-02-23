@@ -3,12 +3,11 @@ html(lang='en')
 	head
 		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-63059865-1")
 		script.
-			{
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'UA-63059865-1');
-			}
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'UA-63059865-1');
 		title Gonzalo Spota | Front-End Web Developer
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
