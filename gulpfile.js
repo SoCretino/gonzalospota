@@ -35,6 +35,6 @@ gulp.task('uglifyCSS', function() {
 
 //Watch task
 gulp.task('default',function() {
-	gulp.watch('src/sass/**/*.scss',['sass']);
+	gulp.watch('src/sass/**/*.scss',['sass', 'uglifyCSS']);
 	gulp.watch('src/templates/**/*.pug',['templates']);
 });

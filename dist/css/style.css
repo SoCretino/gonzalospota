@@ -40,9 +40,9 @@ a {
   color: #2E7D32;
   font-size: 3rem; }
 
-.dev a, .mail a, .work-github a {
+.dev a, .mail a, .work-github a, .work-title a {
   color: #2E7D32; }
-  .dev a:hover, .mail a:hover, .work-github a:hover {
+  .dev a:hover, .mail a:hover, .work-github a:hover, .work-title a:hover {
     color: #424242; }
 
 #work {
