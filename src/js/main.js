@@ -1,4 +1,3 @@
-var jquery = require('jquery');
 var smoothScroll = require('smoothscroll');
 import {TimelineLite} from 'gsap';
 
@@ -20,12 +19,12 @@ var handleClick = function(event) {
 srcBtn.addEventListener('click', handleClick);
 
 //Animations
-var tl = new TimelineLite();
-tl.to('#nav-bar, .profile-image, .main-desc, #work, #contact, .hey', 0, {opacity:1});
-/*
+//var tl = new TimelineLite();
+//tl.to('#nav-bar, .profile-image, .main-desc, #work, #contact, .hey', 0, {opacity:1});
+
 window.onload = function() {
 	var tl = new TimelineLite();
 	tl.to('.hey', 1, {opacity: 1});
 	tl.to('#nav-bar, .profile-image, .main-desc, #work, #contact', 1, {opacity:1}, '+=1.5');
 }
-*/
+
